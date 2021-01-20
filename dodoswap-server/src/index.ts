@@ -26,8 +26,9 @@ app.use('/catalogue', expressJwt({secret: process.env.JWT_SECRET, algorithms: ['
 app.use('/user', expressJwt({secret: process.env.JWT_SECRET, algorithms: ['RS256']}), require('./controllers/user'))
 app.use('/event', expressJwt({secret: process.env.JWT_SECRET, algorithms: ['RS256']}), require('./controllers/event'))
 
-app.get('*', (req: Request, res: Response) => {
+app.get('*', (err: Error, req: Request, res: Response) => {
   res.status(404).send({ message: 'Not Found' })
+  console.error(err.stack)
 })
 
 const port: number | string = process.env.PORT || 3000
