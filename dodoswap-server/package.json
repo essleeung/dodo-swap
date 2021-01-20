@@ -30,7 +30,7 @@
     "rowdy-logger": "^1.0.2"
   },
   "devDependencies": {
-    "ts-node": "^9.1.1",
+    "ts-node": "^9.x",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.9.7"
   },
