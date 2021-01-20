@@ -31,10 +31,10 @@
     "typescript": "^3.9.2"
   },
   "devDependencies": {
-    "ts-node": "^8.10.1",
+    "ts-node": "^12.18.0",
     "ts-node-dev": "^1.0.0-pre.44"
   },
   "engines": {
-    "node": "v8.11.1"
+    "node": "v12.18.0"
   }
 }
