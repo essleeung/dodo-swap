@@ -47,7 +47,7 @@ let userSchema: mongoose.Schema = new mongoose.Schema({
     nativeFruit: String,
     pic: {
         type: String,
-        default: 'https://vignette.wikia.nocookie.net/animalcrossing/images/2/2a/Airlines-char-1-2x.png/revision/latest?cb=20200221010843'
+        default: '/wilbur_dodo.png'
     },
     ratings: [{type: mongoose.Schema.Types.ObjectId, ref: 'Rating'}],
     inventory: [{type: mongoose.Schema.Types.ObjectId, ref: 'Item'}],
@@ -71,7 +71,7 @@ userSchema.pre('save', function(this: UserInterface, done) {
 //Make a JSON representation of the user (for sending on the JWT payload)
 userSchema.set('toJSON', {
 
-    transform: (doc, user: UserInterface) => {
+    transform: (doc: any, user: UserInterface) => {
         console.log('TRANSFORM!')
         delete user.password
         delete user.__v 

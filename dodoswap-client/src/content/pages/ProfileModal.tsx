@@ -17,7 +17,7 @@ const ProfileModal: React.FC<ModalProps> = props => {
     let [acName, setAcname] = useState<String>('')
     let [islandName, setIslandName] = useState<String>('')
     let [nativeFruit, setNativeFruit] = useState('')
-    let [pic, setPic] = useState<String>('https://vignette.wikia.nocookie.net/animalcrossing/images/2/2a/Airlines-char-1-2x.png/revision/latest?cb=20200221010843')
+    let [pic, setPic] = useState<String>('/wilbur_dodo.png')
 
 
     //fetch call to submit user profile edits

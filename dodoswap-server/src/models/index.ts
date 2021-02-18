@@ -5,13 +5,15 @@ import User from './user'
 import Rating from './rating'
 
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/dodo-swap', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/dodo-swap?authSource=admin', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
 })
+.then(() => console.log("CONNECTED!"))
+.catch((err) => console.log("MONGOOSE CONNECT ERROR", err))
 
-console.log("CONNECTED!")
+
 
 module.exports.Item = Item
 module.exports.Event = Event

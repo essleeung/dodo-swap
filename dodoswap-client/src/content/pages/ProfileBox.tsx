@@ -50,7 +50,7 @@ const ProfileBox: React.FC<ProfileBoxProps> = props => {
     }
 
   var picDisplay = (
-    <Image src="https://vignette.wikia.nocookie.net/animalcrossing/images/2/2a/Airlines-char-1-2x.png/revision/latest?cb=20200221010843" alt="wilbur-dodo" size="small" />
+    <Image src="/wilbur_dodo.png"  alt="wilbur-dodo" size="small" />
   )
   if (props.user.pic) {
     picDisplay = (
@@ -62,14 +62,14 @@ const ProfileBox: React.FC<ProfileBoxProps> = props => {
         <Grid>
             <Grid.Column width={2}></Grid.Column>
             <Grid.Column width={4}>
-                <Image src={props.user.pic} rounded size='small' />
+                {picDisplay}
             </Grid.Column>
             <Grid.Column width={9}>
                 <Table>
                     <Table.Row>
                         <Table.Cell>
                             <Header as='h4' image>
-                                <Image src='https://files.meiker.io/assets/7928/2020/04/icon_202004011946325e84ef9861acd.png' rounded size='mini' />
+                                <Image src="/villager.png" rounded size='mini' />
                                 <Header.Content>
                                     Name
                                 <Header.Subheader>{props.user.firstname} {props.user.lastname}</Header.Subheader>
@@ -78,7 +78,7 @@ const ProfileBox: React.FC<ProfileBoxProps> = props => {
                         </Table.Cell>
                         <Table.Cell>
                             <Header as='h4' image>
-                                <Image src='https://www.pngitem.com/pimgs/m/148-1484120_animal-crossing-new-leaf-icon-hd-png-download.png' rounded size='mini' />
+                                <Image src='/leaf.png' rounded size='mini' />
                                 <Header.Content>
                                     AC User Name
                                 <Header.Subheader>{props.user.userName}</Header.Subheader>
@@ -89,7 +89,7 @@ const ProfileBox: React.FC<ProfileBoxProps> = props => {
                     <Table.Row>
                         <Table.Cell>
                             <Header as='h4' image>
-                                <Image src='https://i.redd.it/vhmrq487mgn41.jpg' rounded size='mini' />
+                                <Image src='/island.jpg' rounded size='mini' />
                                 <Header.Content>
                                     Island Name
                                 <Header.Subheader>{props.user.islandName}</Header.Subheader>
@@ -98,7 +98,7 @@ const ProfileBox: React.FC<ProfileBoxProps> = props => {
                         </Table.Cell>
                         <Table.Cell>
                             <Header as='h4' image>
-                                <Image src='https://vignette.wikia.nocookie.net/animalcrossing/images/3/39/Breezy-hollow_icon.png/revision/latest?cb=20171111014116' rounded size='mini' />
+                                <Image src='/tree.png' rounded size='mini' />
                                 <Header.Content>
                                     Native Fruit
                                 <Header.Subheader>{props.user.nativeFruit}</Header.Subheader>
@@ -109,7 +109,7 @@ const ProfileBox: React.FC<ProfileBoxProps> = props => {
                     <Table.Row>
                         <Table.Cell>
                             <Header as='h4' image>
-                                <Image src='https://cdn0.iconfinder.com/data/icons/super-mono-reflection/blue/mail_blue.png' rounded size='mini' />
+                                <Image src='/letter.png' rounded size='mini' />
                                 <Header.Content>
                                     Email
                                 <Header.Subheader>{props.user.email}</Header.Subheader>

@@ -85,7 +85,7 @@ const AddEvent: React.FC<NewEventProps> = props => {
                 <Grid.Row></Grid.Row>
                 <Grid.Row>
                     <Grid.Column>
-                        <Image src="https://dodo.ac/np/images/thumb/3/36/Timmy_%26_Tommy_NH.png/800px-Timmy_%26_Tommy_NH.png" size="large" />
+                        <Image src="/Timmy_and_Tommy_NH.png" size="large" />
                     </Grid.Column>
                     <Grid.Column>
                         <Segment>

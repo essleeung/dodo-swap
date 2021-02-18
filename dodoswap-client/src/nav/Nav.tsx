@@ -1,7 +1,7 @@
 import React, { FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { Decoded } from '../App'
-import { Dropdown, Menu } from 'semantic-ui-react'
+import { Dropdown, Menu, Message } from 'semantic-ui-react'
 import Login from '../content/pages/Login'
 
 //props
@@ -16,7 +16,7 @@ const Nav: React.FC<NavProps> = props => {
     // Remove the token from local storage (or cookies)
     props.updateToken('')
     localStorage.removeItem('boilerToken')
-    
+
   }
 
   var links = (
@@ -25,6 +25,7 @@ const Nav: React.FC<NavProps> = props => {
         name='Home'
         as={Link} to="/"
       />
+      {/* <Message color='red'>Sorry for the inconvenience. The site is currently down for maintenance.</Message> */}
       <Login user={props.user} updateToken={props.updateToken} />
     </Menu>
   )
@@ -36,7 +37,7 @@ const Nav: React.FC<NavProps> = props => {
         <Menu.Item
           name='Home'
           href="/"
-        /> 
+        />
         <Menu.Menu position='right'>
           <Menu.Item
             name='Profile'
@@ -48,8 +49,8 @@ const Nav: React.FC<NavProps> = props => {
           />
           <Dropdown pointing text="Events" id="event" className="top-nav">
             <Dropdown.Menu >
-              <Dropdown.Item as={Link} to= "/event">All Events</Dropdown.Item>
-              <Dropdown.Item as={Link} to= "/event/new">Add Event</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/event">All Events</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/event/new">Add Event</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
           <Menu.Item
