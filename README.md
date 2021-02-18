@@ -3,10 +3,10 @@ MERN Animal Crossing New Horizons Catalogue Party App
 - demo account: wilbur@dodo.com (wilburtest)
 
 ## About
-Dodo Swap is a community platform to connect members for the purpose of organizing cataloguing parties in Animal Crossing New Horizons created by [Sharon Lee](https://github.com/essleeung) and [Royce Ubando](https://github.com/royce-u). For the uninitiated, collecting all items in a series can be tricky and arduous task. With a catalogue party, one can invite other members to their island and collectively catalogue (pick up and drop items, so they can be ordered later in Nook's Cranny). The application is deployed [here](http://dodoswap.herokuapp.com/).
+Dodo Swap is a community platform to connect members for the purpose of organizing cataloguing parties in Animal Crossing New Horizons created by [Sharon Lee](https://github.com/essleeung) and [Royce Ubando](https://github.com/royce-u). For the uninitiated, collecting all items in a series can be tricky and arduous task. With a catalogue party, one can invite other members to their island and collectively catalogue (pick up and drop items, so they can be ordered later in Nook's Cranny). The application is deployed [here](http://dodo-swap.herokuapp.com/).
 
 #### Technologies
-This app was built with Typescript, MongoDB, Express, React and Node and utilizes JSON web tokens to authenticate users. Styling was done using React Semantic UI. The server side is deployed [here](http://dodoswap-server.herokuapp.com/).
+This app was built with Typescript, MongoDB, Express, React and Node and utilizes JSON web tokens to authenticate users. Styling was done using React Semantic UI. The server side is deployed [here](http://dodoswap-server3.herokuapp.com/).
 
 ---
 
